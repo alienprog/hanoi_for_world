@@ -1,0 +1,9 @@
+.hanoi { --ink: #0f172a; --surface: #f1f5f9; width: 100%; min-width: 0; color: var(--ink); font: 16px/1.5 system-ui, sans-serif; }
+.hanoi__canvas { display: block; width: 100%; height: 320px; background: var(--surface); border-radius: 12px; touch-action: none; }
+.hanoi--completed { --surface: #dcfce7; }
+.hanoi__score { font-weight: 600; }
+.hanoi__message { color: #991b1b; min-height: 1.5em; overflow-wrap: anywhere; }
+.hanoi [hidden] { display: none; }
+/* Reserve feedback space; selection does not change the field layout. */
+.hanoi__message { height: 3em; margin: 8px 0; overflow: auto; font-size: 14px; }
+.hanoi__canvas:focus-visible { outline: 2px solid #a8bfdf; outline-offset: 3px; }
